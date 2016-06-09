@@ -11,10 +11,10 @@
 #include	<lapin.h>
 #include	<math.h>
 
-void	go(t_bunny_position *curpos,
-	   double angle,
-	   t_bunny_position *newpos,
-	   int move)
+void		go(t_bunny_position *curpos,
+	 	   double angle,
+	 	   t_bunny_position *newpos,
+		   int move)
 {
   newpos->x = (move * cos(angle)) + curpos->x;
   newpos->y = (move * sin(angle)) + curpos->y;
